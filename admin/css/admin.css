@@ -1,0 +1,422 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  overflow-x:hidden;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+        circle farthest-side at 0% 50%,
+        #282828 23.5%,
+        rgba(255, 170, 0, 0) 0
+      )
+      21px 30px,
+    radial-gradient(
+        circle farthest-side at 0% 50%,
+        #2c3539 24%,
+        rgba(240, 166, 17, 0) 0
+      )
+      19px 30px,
+    linear-gradient(
+        #282828 14%,
+        rgba(240, 166, 17, 0) 0,
+        rgba(240, 166, 17, 0) 85%,
+        #282828 0
+      )
+      0 0,
+    linear-gradient(
+        150deg,
+        #282828 24%,
+        #2c3539 0,
+        #2c3539 26%,
+        rgba(240, 166, 17, 0) 0,
+        rgba(240, 166, 17, 0) 74%,
+        #2c3539 0,
+        #2c3539 76%,
+        #282828 0
+      )
+      0 0,
+    linear-gradient(
+        30deg,
+        #282828 24%,
+        #2c3539 0,
+        #2c3539 26%,
+        rgba(240, 166, 17, 0) 0,
+        rgba(240, 166, 17, 0) 74%,
+        #2c3539 0,
+        #2c3539 76%,
+        #282828 0
+      )
+      0 0,
+    linear-gradient(90deg, #2c3539 2%, #282828 0, #282828 98%, #2c3539 0%) 0 0
+      #282828;
+  background-size: 40px 60px;
+  
+}
+.policy , .tc{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  color: white;
+  text-align: left;
+  width: 80%;
+  height: auto;
+  position: relative;
+  left: 10%;
+  top: 20px;
+}
+.policy h1 , .tc h1{
+  font-size: 30px;
+  font-weight: 800;
+}
+
+
+/* profile code */
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  width: 100%;
+  gap: 20px;
+  color: white;
+}
+.profile-photo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.profile-photo a {
+  color: white;
+}
+.profile-photo img {
+  width: 200px;
+  height: 200px;
+  border: 1.5px dashed white;
+  border-radius: 50%;
+}
+.profile-section .profile-details {
+  width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border: 1px solid;
+  padding: 5px;
+  line-height: 2rem;
+  padding: 1.3rem;
+}
+.profile-btn button {
+  width: 100%;
+  height: 2rem;
+  margin-top: 1rem;
+}
+
+.profile-details label {
+  /* background-color: #f8b732; */
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.profile-details span {
+  font-size: 1.1rem;
+}
+
+/* Admin panel code */
+.adminpanel {
+  width: 220px;
+  background-color: #2a2d43;
+  color: #fff;
+  height: 100vh;
+  padding: 20px;
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: 80%;
+}
+
+.adminpanel h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.adminpanel ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.adminpanel ul li {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  transition: 300ms ease-in-out;
+}
+.adminpanel ul li:hover {
+  background-color: #171826;
+  transform: scale(1.1);
+  width: 99%;
+}
+i {
+  font-size: 1.1rem;
+}
+.adminpanel ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  /* display: flex; */
+  position: relative;
+  left: 300px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 80%;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: none;
+  z-index: 1000;
+}
+.php {
+  display: block;
+}
+.popup-content {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+.popup-left {
+  flex: 1;
+}
+
+.popup-right {
+  flex: 1;
+}
+
+.main-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.thumbnail-images img {
+  width: 70px;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.thumbnail-images img:hover {
+  border: 1px solid #333;
+}
+
+.rating {
+  color: green;
+  font-weight: bold;
+}
+
+.price-sale {
+  color: #e53935;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.price-original {
+  text-decoration: line-through;
+  margin-left: 10px;
+  color: gray;
+}
+
+.discount {
+  color: green;
+  margin-left: 10px;
+}
+
+.sizes button {
+  padding: 5px 10px;
+  margin-right: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.sizes button:hover {
+  background-color: #f0f0f0;
+}
+
+.actions {
+  margin-top: 10px;
+}
+
+.actions button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-to-cart {
+  background-color: #4caf50;
+  color: white;
+}
+
+.add-to-cart:hover {
+  background-color: #45a049;
+}
+
+.wishlist {
+  background-color: #ffc0cb;
+  color: white;
+}
+
+.compare {
+  background-color: #2196f3;
+  color: white;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  color: gray;
+}
+
+.close-btn:hover {
+  color: black;
+}
+
+.hidden {
+  display: none;
+}
+
+/* payment form */
+
+.payment-form {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.payment-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.payment-form label {
+  display: block;
+  margin: 10px 0 5px;
+  color: #555;
+}
+
+.payment-form select,
+.payment-form input,
+.payment-form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.payment-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.payment-form button:hover {
+  background-color: #0056b3;
+}
+
+.hidden {
+  display: none;
+}
+
+/* dashboard code */
+
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.stats {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  background: #fff;
+  margin-bottom: 1rem;
+}
+
+.stat {
+  flex: 1;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.chart {
+  padding: 1rem;
+  background: #fff;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+table th,
+table td {
+  padding: 0.5rem;
+  text-align: left;
+  border: 1px solid #ddd;
+}

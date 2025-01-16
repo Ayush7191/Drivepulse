@@ -1,0 +1,90 @@
+ <!-- Car Card 2 -->
+                <div class="carcard">
+                    <div class="car-image" style="background-image: url(./assets/img/cars/venue.jpeg);"></div>
+                    <div class="car-details">
+                        <div class="car-name" name="hatchback">Hyundai Venue</div>
+                        <div class="car-price">₹700/day</div>
+                        <div class="car-info">Distance: 95 km | Seats: 5 | Transmission: Manual</div>
+                    </div>
+                </div>
+
+                <!-- Car Card 3 -->
+                <div class="carcard">
+                    <div class="car-image" style="background-image: url('./assets/img/cars/swift.jpeg');"></div>
+                    <div class="car-details">
+                        <div class="car-name" name="hatchback">Maruti Suzuki Swift</div>
+                        <div class="car-price">₹500/day</div>
+                        <div class="car-info">Distance: 80 km | Seats: 5 | Transmission: Automatic</div>
+                    </div>
+                </div>
+
+                <!-- Car Card 4 -->
+                <div class="carcard">
+                    <div class="car-image" style="background-image: url('./assets/img/cars/alto.jpeg')"> </div>
+                    <div class="car-details">
+                        <div class="car-name" name="hatchback">Maruti Alto</div>
+                        <div class="car-price">₹300/day</div>
+                        <div class="car-info">Distance: 120 km | Seats: 5 | Transmission: Manual</div>
+                    </div>
+                </div>
+
+
+                <!-- Car Card 5 -->
+                <div class="carcard">
+                    <div class="car-image" style="background-image: url('./assets/img/cars/fortuner.jpeg')"> </div>
+                    <div class="car-details" name="suv">
+                        <div class="car-name">Toyata Fortuner</div>
+                        <div class="car-price">₹3000/day</div>
+                        <div class="car-info">Distance: 1200 km | Seats: 6 | Transmission: Automatic</div>
+                    </div>
+                </div>
+
+                <!-- Car Card 6 -->
+                <div class="carcard">
+                    <div class="car-image" style="background-image: url('./assets/img/cars/creta.jpeg')"> </div>
+                    <div class="car-details">
+                        <div class="car-name" name="hatchback">Hundai Creta</div>
+                        <div class="car-price">₹900/day</div>
+                        <div class="car-info">Distance: 300 km | Seats: 5 | Transmission: Automatic</div>
+                    </div>
+                </div>
+
+                <!-- Car Card 7 -->
+                <div class="carcard">
+                    <div class="car-image" style="background-image: url('./assets/img/cars/dzire.jpeg')"> </div>
+                    <div class="car-details">
+                        <div class="car-name" name="sedan">Maruti Suzuki Dzire</div>
+                        <div class="car-price">₹680/day</div>
+                        <div class="car-info">Distance: 300 km | Seats: 5 | Transmission: Manual</div>
+                    </div>
+                </div>
+
+                <!-- Car Card 8 -->
+                <div class="carcard">
+                    <a href="3d.php"><div class="car-image" style="background-image: url('./assets/img/cars/virtus.jpeg')"> </div>
+                    <div class="car-details">
+                        <div class="car-name" name="sedan">Volkswagen Virtus GT</div>
+                        <div class="car-price">₹600/day</div>
+                        <div class="car-info">Distance: 600 km | Seats: 5 | Transmission: Automatic</div>
+                    </div></a>
+                </div>
+
+                <!-- Car Card 9 -->
+                <div class="carcard">
+                    <div class="car-image" style="background-image: url('./assets/img/cars/verna.jpeg')"> </div>
+                    <div class="car-details">
+                        <div class="car-name" name="sedan">Hundai Verna</div>
+                        <div class="car-price">₹800/day</div>
+                        <div class="car-info">Distance: 590 km | Seats: 5 | Transmission: Automatic</div>
+                    </div>
+                </div>
+
+                <!-- Car Card 10 -->
+         <div class="carcard">
+                <div class="car-image" style="background-image: url('./assets/img/cars/honda-city.jpeg')"> </div>
+                <div class="car-details">
+                    <div class="car-name" name="sedan">Honda City</div>
+                    <div class="car-price">₹560/day</div>
+                    <div class="car-info">Distance: 400 km | Seats: 5 | Transmission: Manual</div>
+                </div>
+            </div>
