@@ -7,7 +7,7 @@
                 </div> -->
                 <div class="nav-btn">
                     <a href="index.php"><i class="ri-home-4-line"></i></a>
-                    <a href="booking.php"><i class="ri-calendar-check-line"></i></a>
+                    <a href="booked.php"><i class="ri-calendar-check-line"></i></a>
                     <a href="about.php"><i class="ri-article-line"></i></a>
                     <a href="contact.php"><i class="ri-customer-service-line"></i></a>
                 </div>

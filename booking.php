@@ -60,7 +60,7 @@
     <h1>Book Your Ride Now</h1>
     <form action="process_booking.php" method="POST">
       <!-- Client Details Section -->
-      <div class="form-group">
+      <!-- <div class="form-group">
         <label for="fullName">Full Name:</label>
         <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
       </div>
@@ -76,9 +76,9 @@
         <label for="address">Address:</label>
         <textarea id="address" name="address" rows="3" placeholder="Enter your address"></textarea>
       </div>
-      
+       -->
       <!-- Car Booking Options -->
-      <div class="form-group">
+      <!-- <div class="form-group">
         <label for="carType">Select Car Type:</label>
         <select id="carType" name="carType" required>
           <option value="">--Select--</option>
@@ -87,7 +87,7 @@
           <option value="hatchback">Hatchback</option>
           <option value="luxury">Luxury</option>
         </select>
-      </div>
+      </div> -->
       <div class="form-group">
         <label for="pickupLocation">Pickup Location:</label>
         <input type="text" id="pickupLocation" name="pickupLocation" placeholder="Enter pickup location" required>

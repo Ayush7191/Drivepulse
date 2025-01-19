@@ -1,19 +1,21 @@
 <?php
 session_start();
+require_once 'connection.php';
 
-// Mock logged-in user email (this would come from your session or authentication system)
-// $user_email = "ayushchhodvadiya9900@gmail.com";
-
-include 'connection.php';
+// Check if the user is logged in
+if (!isset($_SESSION['id'])) {
+    header("Location:profile.php");
+    exit();
+}
 
 // Fetch user details
-$stmt = $conn->prepare("SELECT name, email, mobile, gender, city, profile_document, mobile_verified FROM users WHERE email = ?");
-$stmt->bind_param("s", $user_email);
+$user_id = $_SESSION['id'];
+$sql = "SELECT * FROM users WHERE id = ?";
+$stmt = $conn->prepare($sql);
+$stmt->bind_param("i", $user_id);
 $stmt->execute();
-$stmt->bind_result($name, $email, $mobile, $gender, $city, $profile_document, $mobile_verified);
-$stmt->fetch();
-$stmt->close();
-$conn->close();
+$result = $stmt->get_result();
+$user = $result->fetch_assoc();
 ?>
 
 <!DOCTYPE html>
@@ -159,8 +161,8 @@ $conn->close();
 
                 <input id="file-input" type="file" />
             </div>
-            <h2><?php echo htmlspecialchars($name); ?></h2>
-            <p><?php echo htmlspecialchars($email); ?></p>
+            <h2><?php echo htmlspecialchars($user['name']); ?></h2>
+            <p><?php echo htmlspecialchars($user['email']); ?></p>
             <div class="status">
                 <span>Profile Document</span>
                 <span><?php echo $profile_document ? "✅" : "❌"; ?></span>

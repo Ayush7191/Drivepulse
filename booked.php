@@ -6,7 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/dp.css">
-    
+    <style>
+        .booking-container{
+            display: flex;
+            /* justify-content: space-between; */
+            /* align-items: center; */
+            flex-direction: column;
+            flex-wrap: wrap;
+            position: relative;
+            top: 100px;
+            left: 300px;
+            /* border: 1px solid white; */
+            border-radius: 10px;
+            width: 50%;
+            padding: 30px;
+            /* height: 30vh; */
+            line-height: 5vh;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            background:rgba(0, 0, 0, 0.45);
+            box-shadow: inset 0 0 10px 0 rgba(255, 255, 255, 0.49), 0 0 10px 0 rgba(100, 100, 100, 0.33) ;
+        }
+        h1{
+            font-family: "baloo bhai 2";
+            padding-bottom: 10px;
+            text-align: center;
+            color: white;
+        }
+        input,select{
+            width: 100%;
+            height: 3.5vh;
+        }
+        button{
+            width: 100%;
+            height: 4vh;
+            margin: 20px 0;
+            background-color:   #68cd49;
+        }
+        button:hover{
+            background-color:#00ff00;
+        }
+    </style>
 </head>
 
 <body>
@@ -24,7 +64,7 @@
                     <option value="">Select City</option>
                     <option value="city1">Ahmedabad</option>
                     <option value="city2">Gandhinagar</option>
-                    <option value="city3">Vadodara</option>
+                    <!-- <option value="city3">Vadodara</option>
                     <option value="city3">Surat</option>
                     <option value="city3">Porbandar</option>
                     <option value="city3">Mehsana</option>
@@ -39,7 +79,7 @@
                     <option value="city3">Chandigarh</option>
                     <option value="city3"> Mysore</option>
                     <option value="city3">Dehradun</option>
-                    <option value="city3">Surat</option>
+                    <option value="city3">Surat</option> -->
                 </select>
             </div>
 
@@ -68,6 +108,11 @@
     </div>
     <!-- choose-details-end -->
     <script src="script.js"></script>
+    <script>
+        function goin(){
+            window.location.href = 'inventory.php';
+        }
+    </script>
 </body>
 
 </html>
